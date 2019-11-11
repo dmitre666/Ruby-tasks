@@ -1,8 +1,7 @@
 puts "Enter radius of bigger circle (>20)"
-# less_radius = gets.chomp
 bigger_radius = gets.chomp
 less_radius = 20
-def checking_input_data (bigger_radius, less_radius)
+def check(bigger_radius, less_radius)
   if bigger_radius.to_i <= 20
     puts "Radius of bigger circle must be more then 20"
   else
@@ -16,4 +15,4 @@ def calculate_area (less_radius, bigger_radius)
   result = bigger_area - less_area
   puts "Square = %.2f;" %[result]
 end
-checking_input_data(bigger_radius.to_i, less_radius)
+check(bigger_radius.to_i, less_radius)
