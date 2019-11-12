@@ -1,18 +1,7 @@
-# x = 45
-# y = 53
-puts "Enter X:"
-x = gets.chomp
-puts "Enter Y:"
-y = gets.chomp
- if x < y
-    max = y
-    min = x
-  elsif x > y
-    max = x
-    min = y
-  else
-    puts "X = Y"
-    exit
-  end
-puts "max = #{max}"
-puts "min = #{min}"
+puts "Enter X"
+x = gets.chomp.to_i
+puts "Enter Y"
+y = gets.chomp.to_i
+Arr = [x, y]
+puts "Min = #{Arr.to_a.min{ |a, b| a<=>b}}"
+puts "Max = #{Arr.to_a.max{ |a, b| a<=>b}}"
